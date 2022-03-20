@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Calculator</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='site.css')}}" />
+    </head>
+
+    <div class="body">
+        <form action = "http://127.0.0.1:5000/" method = "POST">
+            <div class="navbar">
+                <div class="navbar-brand">Calculator</div>
+            </div>
+    
+            <div class="body-content">
+                <div class="outer-box">
+                    <div class="inner-box">
+                        <div class="screen">
+                            <div class="main-screen" id="main_output">{{ main_output }}</div>
+                            <div class="sub-screen" id="sub_output">{{ sub_output }}</div>
+                        </div>
+    
+                        <div class="buttons">
+                            <button class="btn-operate btn btn-default" name = "calc_button" value="+/-">+/-</button>
+                            <button class="btn-operate btn btn-default" name = "calc_button" value="^">^</button>
+                            <button class="btn-operate btn btn-default" name = "calc_button" value="C">C</button>
+                            <button class="btn-operate btn btn-default" name = "calc_button" value="delete">delete</button>
+                        </div>
+    
+                        <div class="buttons">
+                            <button class="btn-operate btn btn-default" name = "calc_button" value="1/x">1/x</button>
+                            <button class="btn-operate btn btn-default" name = "calc_button" value="x^2">x^2</button>
+                            <button class="btn-operate btn btn-default" name = "calc_button" value="sqrt(x)">sqrt(x)</button>
+                            <button class="btn-operate btn btn-default" name = "calc_button" value="/">/</button>
+                        </div>
+                        
+                        <div class="buttons">
+                            <button class="nums btn btn-default" name = "calc_button" value="7">7</button>
+                            <button class="nums btn btn-default" name = "calc_button" value="8">8</button>
+                            <button class="nums btn btn-default" name = "calc_button" value="9">9</button>
+                            <button class="btn-operate btn btn-default" name = "calc_button" value="*">x</button>
+                        </div>
+    
+                        <div class="buttons">
+                            <button class="nums btn btn-default" name = "calc_button" value="4">4</button>
+                            <button class="nums btn btn-default" name = "calc_button" value="5">5</button>
+                            <button class="nums btn btn-default" name = "calc_button" value="6">6</button>
+                            <button class="btn-operate btn btn-default" name = "calc_button" value="-">-</button>
+                        </div>
+    
+                        <div class="buttons">
+                            <button class="nums btn btn-default" name = "calc_button" value="1">1</button>
+                            <button class="nums btn btn-default" name = "calc_button" value="2">2</button>
+                            <button class="nums btn btn-default" name = "calc_button" value="3">3</button>
+                            <button class="btn-operate btn btn-default" name = "calc_button" value="+">+</button>
+                        </div>
+    
+                        <div class="buttons">
+                            <button class="nums btn-zero btn btn-default" name = "calc_button" value="0">0</button>
+                            <button class="nums btn btn-default" name = "calc_button" value=".">.</button>
+                            <button class="btn-operate btn btn-default" name = "calc_button" value="=">=</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "output-box">
+                    <table>
+                        <tr>
+                            <th>Output History</th>
+                        </tr>
+                        {%for value in output_history%}
+                            <tr>
+                                <td>{{value}}</td>
+                        {%endfor%}
+                    </table>
+                </div>
+            </div>
+        </form>
+    </div>
+</html>
