@@ -1,1 +1,1 @@
-web: gunicorn <Calculator-name>:<app-name>
+web: gunicorn Calculator:app
