@@ -10,7 +10,8 @@ def default():
     return render_template(
         "calculator.html",
         sub_output = 0,
-        main_output = ""
+        main_output = "",
+        output_history = []
     )
 
 # assigning default entries to the lists
