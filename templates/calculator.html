@@ -7,7 +7,7 @@
     </head>
 
     <div class="body">
-        <form action = "https://polar-anchorage-68644.herokuapp.com/" method = "POST">
+        <form action = "http://127.0.0.1:5000/" method = "POST">
             <div class="navbar">
                 <div class="navbar-brand">Calculator</div>
             </div>
@@ -66,7 +66,9 @@
                 <div class = "output-box">
                     <table>
                         <tr>
-                            <th>Output History</th>
+                            <th>
+                                Output History <button class="btn-operate clear-history btn btn-default" name = "calc_button" value="clear_history">clear</button> 
+                            </th>
                         </tr>
                         {%for value in output_history%}
                             <tr>

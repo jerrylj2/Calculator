@@ -79,7 +79,7 @@
 button {
     padding: 10px 10px;
     width: 60px;
-    height: 35px;
+    line-height: 12px;
     margin: 7px 0px 0px 20px;
     border-radius: 40%;
   }
@@ -93,7 +93,7 @@ table {
     width: 100%;
   }
 
-td, th {
+td {
     text-align: center;
   }
 
@@ -104,6 +104,13 @@ th {
 tr:nth-child(even) {
     background-color: #dddddd;
   }
+
+.clear-history {
+  line-height: 0px;
+  padding: 1em;
+  margin: 0px 0px 0px 200px;
+  background-color: #40d84c;
+}
 
 footer {
   border: 2px solid #9e9b97;

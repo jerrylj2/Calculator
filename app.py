@@ -16,7 +16,7 @@ def default():
 
 # assigning default entries to the lists
 sub_calc_list = []
-main_calc_list = [0]
+main_calc_list = ["0"]
 output_history = []
 
 operator_list = ["+", "-", "/", "*", "^"]
@@ -31,7 +31,7 @@ def reset_list():
     for i in range(0, len(sub_calc_list)):
         sub_calc_list.pop(0)
     main_calc_list.pop()
-    main_calc_list.append(0)
+    main_calc_list.append("0")
     return;
 
 # assigning evaluated output to empty lists
@@ -50,7 +50,7 @@ def calculator():
     if request.method == 'POST':
         calc_input = list(request.form.to_dict().values()) # converting button value to a list
         # Prevents user from selecting an operator if one was just selected
-        if (calc_input[0] in operator_list or "=" in calc_input) and len(sub_calc_list) > 1 and sub_calc_list[len(sub_calc_list) - 1] in operator_list:
+        if (calc_input[0] in operator_list or "=" in calc_input) and len(sub_calc_list) > 0 and sub_calc_list[len(sub_calc_list) - 1] in operator_list:
             sub_output = adjusted_output()[0]
             main_output = ""
         elif "=" in calc_input:
@@ -165,6 +165,12 @@ def calculator():
             else:
                 sub_calc_list.pop()
                 sub_output = adjusted_output()[0]
+
+        elif "clear_history" in calc_input:
+            for i in range(0, len(output_history)):
+                output_history.pop(0)
+            sub_output = adjusted_output()[0]
+            main_output = "".join(main_calc_list)
 
         else:
             sub_calc_list.extend(calc_input)
