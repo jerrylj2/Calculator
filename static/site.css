@@ -9,10 +9,7 @@
 }
 
 .body {
-    background-color: lightslategray;
     background: linear-gradient(135deg, #d85f5f 0%, #748088 50%, #751414 100%);
-    width: 100vw;
-    min-height: 100vh;
   }
 
 .outer-box {
