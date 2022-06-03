@@ -5,7 +5,6 @@
     font-family: 'Times New Roman', Times, serif;
     color: white;
     padding: 10px 5px 10px 5px;
-    border-radius: 10px;
 }
 
 .body {
@@ -98,7 +97,7 @@ th {
     border-bottom:2px solid black;
   }
 
-tr:nth-child(even) {
+#output_history > tr:nth-child(odd) {
     background-color: #dddddd;
   }
 
@@ -106,7 +105,6 @@ tr:nth-child(even) {
   line-height: 0px;
   padding: 1em;
   margin: 0px 0px 0px 200px;
-  background-color: #40d84c;
 }
 
 footer {
