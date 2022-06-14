@@ -123,7 +123,7 @@ function solve(obj) {
 function add_output_row(output_history, sub_calc_output_value) {
     if(output_history.innerHTML == ""){
         output_history.innerHTML = "<tr><td>" + sub_calc_output_value + "</td></tr>";
-        } else if(document.getElementsByTagName("tr").length < 19){
+        } else if(document.getElementsByTagName("tr").length < 18){
         output_history.innerHTML = "<tbody><tr><td>" + sub_calc_output_value + "</td></tr></tbody>" +
         output_history.innerHTML;
         } else {
