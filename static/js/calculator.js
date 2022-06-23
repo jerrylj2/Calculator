@@ -53,56 +53,56 @@ function solve(obj) {
     case "sqrt(x)":
         try {
         sub_calc_output_value = parse("(" + convert_equation(sub_calc_output_value) + ")**.5");
-        if(isNaN(sub_calc_output_value)) throw "This operation is not allowed";
+        if(isNaN(sub_calc_output_value)) throw "Improper Operation";
         sub_calc_output.innerHTML = sub_calc_output_value;
         main_calc_output.innerHTML = sub_calc_output_value;
         add_output_row(output_history, sub_calc_output_value);
         }
         catch(err) {
         sub_calc_output.innerHTML = null;
-        main_calc_output.innerHTML = "This operation is not allowed";
+        main_calc_output.innerHTML = "Improper Operation";
         }
         break;
 
     case "x^2":
         try {
         sub_calc_output_value = parse("(" + convert_equation(sub_calc_output_value) + ")**2");
-        if(isNaN(sub_calc_output_value)) throw "This operation is not allowed";
+        if(isNaN(sub_calc_output_value)) throw "Improper Operation";
         sub_calc_output.innerHTML = sub_calc_output_value;
         main_calc_output.innerHTML = sub_calc_output_value;
         add_output_row(output_history, sub_calc_output_value);
         }
         catch(err) {
         sub_calc_output.innerHTML = null;
-        main_calc_output.innerHTML = "This operation is not allowed";
+        main_calc_output.innerHTML = "Improper Operation";
         }
         break;
 
     case "1/x":
         try {
         sub_calc_output_value = parse("1/(" + convert_equation(sub_calc_output_value) + ")");
-        if(isNaN(sub_calc_output_value)) throw "This operation is not allowed";
+        if(isNaN(sub_calc_output_value)) throw "Improper Operation";
         sub_calc_output.innerHTML = sub_calc_output_value;
         main_calc_output.innerHTML = sub_calc_output_value;
         add_output_row(output_history, sub_calc_output_value);
         }
         catch(err) {
         sub_calc_output.innerHTML = null;
-        main_calc_output.innerHTML = "This operation is not allowed";
+        main_calc_output.innerHTML = "Improper Operation";
         }
         break;
 
     case "+/-":
         try {
         sub_calc_output_value = parse("-1*(" + convert_equation(sub_calc_output_value) + ")");
-        if(isNaN(sub_calc_output_value)) throw "This operation is not allowed";
+        if(isNaN(sub_calc_output_value)) throw "Improper Operation";
         sub_calc_output.innerHTML = sub_calc_output_value;
         main_calc_output.innerHTML = sub_calc_output_value;
         add_output_row(output_history, sub_calc_output_value);
         }
         catch(err) {
         sub_calc_output.innerHTML = null;
-        main_calc_output.innerHTML = "This operation is not allowed";
+        main_calc_output.innerHTML = "Improper Operation";
         }
         break;
 
@@ -122,14 +122,14 @@ function solve(obj) {
     case "=":
         try {
         sub_calc_output_value = parse(convert_equation(sub_calc_output_value));
-        if(isNaN(sub_calc_output_value)) throw "This operation is not allowed";
+        if(isNaN(sub_calc_output_value)) throw "Improper Operation";
         sub_calc_output.innerHTML = sub_calc_output_value;
         main_calc_output.innerHTML = sub_calc_output_value;
         add_output_row(output_history, sub_calc_output_value);
         }
         catch(err) {
         sub_calc_output.innerHTML = null;
-        main_calc_output.innerHTML = "This operation is not allowed";
+        main_calc_output.innerHTML = "Improper Operation";
         }
     }
 }
