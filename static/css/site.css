@@ -120,8 +120,18 @@ th {
   border-bottom:2px solid black;
 }
 
+@keyframes row_add {
+  from {background-color: black;}
+  to {background-color: white;}
+}
+
 #output_history > tr:nth-child(odd) {
-  background-color: #dddddd;
+  background-color: white;
+}
+
+#output_history > tr:first-child {
+  animation-name: row_add;
+  animation-duration: 2s;
 }
 
 .btn-clear-history {
