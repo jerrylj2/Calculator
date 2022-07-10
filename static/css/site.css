@@ -87,12 +87,24 @@ button:hover {
   background-color: grey;
 }
 
-button:active {
-  background-color: #40d84c;
-}
-
 .btn-zero {
   width: 135px;
+}
+
+.btn-number:active {
+  background-color: #84e6d2;
+}
+
+.btn-operator:active {
+  background-color: #e1e953;
+}
+
+.btn-clear:active {
+  background-color: #7cdb84;
+}
+
+.btn-delete:active {
+  background-color: rgb(255, 68, 68);
 }
 
 table {
@@ -112,7 +124,7 @@ th {
   background-color: #dddddd;
 }
 
-.clear-history {
+.btn-clear-history {
   line-height: 0px;
   padding: 1em;
   margin: 0px 0px 0px 140px;
