@@ -1,23 +1,3 @@
-// Changes button color on click
-function mDown(obj) {
-    obj.style.backgroundColor = "#40d84c";
-}
-
-// Changes button color on click release
-function mUp(obj) {
-    obj.style.backgroundColor="white";
-}
-
-// Changes button color on mouse over
-function mOver(obj) {
-    obj.style.backgroundColor="grey";
-}
-
-// Changes button color on mouse out
-function mOut(obj) {
-    obj.style.backgroundColor="white";
-}
-
 // Solves equation that is in string format
 function parse(obj) {
     return Function('"use strict";return (' + obj + ')')();

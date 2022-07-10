@@ -83,6 +83,14 @@ button {
   border-radius: 40%;
 }
 
+button:hover {
+  background-color: grey;
+}
+
+button:active {
+  background-color: #40d84c;
+}
+
 .btn-zero {
   width: 135px;
 }

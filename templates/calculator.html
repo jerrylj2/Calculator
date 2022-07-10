@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="keywords" content="Calculator, JavaScript. Flask">
+        <meta name="keywords" content="Calculator, JavaScript, Flask">
         <meta name="author" content="Jerry Jackson">
         <title>Calculator</title>
         <link rel="icon" type="image/x-icon" href="/static/images/faveicon.ico">
@@ -24,77 +24,61 @@
                     </div>
 
                     <div class="buttons">
-                        <button 
-                            onmousedown="mDown(this)" onmouseup="mUp(this)" onmouseover="mOver(this)" onmouseout="mOut(this)" 
-                            onclick="display_input(this)" class="btn-operate btn btn-default" name="calc_button" value="^">^
+                        <button   
+                            onclick="display_input(this)" class="btn-operate btn btn-default btn-power" name="calc_button" value="^">^
                         </button>
                         <button 
-                            onmousedown="mDown(this)" onmouseup="mUp(this)" onmouseover="mOver(this)" onmouseout="mOut(this)" 
                             onclick="solve(this)" class="btn-operate btn btn-default" name="calc_button" value="C">C
                         </button>
                         <button 
-                            onmousedown="mDown(this)" onmouseup="mUp(this)" onmouseover="mOver(this)" onmouseout="mOut(this)" 
                             onclick="solve(this)" class="btn-operate btn btn-default" name="calc_button" value="delete">delete
                         </button>
                         <button 
-                            onmousedown="mDown(this)" onmouseup="mUp(this)" onmouseover="mOver(this)" onmouseout="mOut(this)" 
                             onclick="solve(this)" class="btn-operate btn btn-default" name="calc_button" value="+/-">+/-
                         </button>
                     </div>
 
                     <div class="buttons">
                         <button 
-                            onmousedown="mDown(this)" onmouseup="mUp(this)" onmouseover="mOver(this)" onmouseout="mOut(this)" 
                             onclick="solve(this)" class="btn-operate btn btn-default" name="calc_button" value="1/x">1/x
                         </button>
                         <button 
-                            onmousedown="mDown(this)" onmouseup="mUp(this)" onmouseover="mOver(this)" onmouseout="mOut(this)" 
                             onclick="solve(this)" class="btn-operate btn btn-default" name="calc_button" value="x^2">x^2
                         </button>
                         <button 
-                            onmousedown="mDown(this)" onmouseup="mUp(this)" onmouseover="mOver(this)" onmouseout="mOut(this)" 
                             onclick="solve(this)" class="btn-operate btn btn-default" name="calc_button" value="sqrt(x)">sqrt(x)
                         </button>
                         <button 
-                            onmousedown="mDown(this)" onmouseup="mUp(this)" onmouseover="mOver(this)" onmouseout="mOut(this)" 
                             onclick="display_input(this)" class="btn-operate btn btn-default" name="calc_button" value="/">/
                         </button>
                     </div>
                     
                     <div class="buttons">
                         <button 
-                            onmousedown="mDown(this)" onmouseup="mUp(this)" onmouseover="mOver(this)" onmouseout="mOut(this)" 
                             onclick="display_input(this)" class="nums btn btn-default" name="calc_button" value="7">7
                         </button>
                         <button 
-                            onmousedown="mDown(this)" onmouseup="mUp(this)" onmouseover="mOver(this)" onmouseout="mOut(this)" 
                             onclick="display_input(this)" class="nums btn btn-default" name="calc_button" value="8">8
                         </button>
                         <button 
-                            onmousedown="mDown(this)" onmouseup="mUp(this)" onmouseover="mOver(this)" onmouseout="mOut(this)" 
                             onclick="display_input(this)" class="nums btn btn-default" name="calc_button" value="9">9
                         </button>
                         <button 
-                            onmousedown="mDown(this)" onmouseup="mUp(this)" onmouseover="mOver(this)" onmouseout="mOut(this)" 
                             onclick="display_input(this)" class="btn-operate btn btn-default" name="calc_button" value="*">x
                         </button>
                     </div>
 
                     <div class="buttons">
                         <button 
-                            onmousedown="mDown(this)" onmouseup="mUp(this)" onmouseover="mOver(this)" onmouseout="mOut(this)" 
                             onclick="display_input(this)" class="nums btn btn-default" name="calc_button" value="4">4
                         </button>
                         <button 
-                            onmousedown="mDown(this)" onmouseup="mUp(this)" onmouseover="mOver(this)" onmouseout="mOut(this)" 
                             onclick="display_input(this)" class="nums btn btn-default" name="calc_button" value="5">5
                         </button>
                         <button 
-                            onmousedown="mDown(this)" onmouseup="mUp(this)" onmouseover="mOver(this)" onmouseout="mOut(this)" 
                             onclick="display_input(this)" class="nums btn btn-default" name="calc_button" value="6">6
                         </button>
                         <button 
-                            onmousedown="mDown(this)" onmouseup="mUp(this)" onmouseover="mOver(this)" onmouseout="mOut(this)" 
                             onclick="display_input(this)" class="btn-operate btn btn-default" name="calc_button" value="-">-
                         </button>
                     </div>
@@ -113,22 +97,18 @@
                             onclick="display_input(this)" class="nums btn btn-default" name="calc_button" value="3">3
                         </button>
                         <button 
-                            onmousedown="mDown(this)" onmouseup="mUp(this)" onmouseover="mOver(this)" onmouseout="mOut(this)" 
                             onclick="display_input(this)" class="btn-operate btn btn-default" name="calc_button" value="+">+
                         </button>
                     </div>
 
                     <div class="buttons">
                         <button 
-                            onmousedown="mDown(this)" onmouseup="mUp(this)" onmouseover="mOver(this)" onmouseout="mOut(this)" 
                             onclick="display_input(this)" class="nums btn-zero btn btn-default" name="calc_button" value="0">0
                         </button>
                         <button 
-                            onmousedown="mDown(this)" onmouseup="mUp(this)" onmouseover="mOver(this)" onmouseout="mOut(this)" 
                             onclick="display_input(this)" class="nums btn btn-default" name="calc_button" value=".">.
                         </button>
                         <button 
-                            onmousedown="mDown(this)" onmouseup="mUp(this)" onmouseover="mOver(this)" onmouseout="mOut(this)" 
                             onclick="solve(this)" class="btn-operate btn btn-default" name="calc_button" value="=">=
                         </button>
                     </div>
@@ -142,8 +122,7 @@
                             <th>
                                 Output History 
                                 <button 
-                                  onmousedown="mDown(this)" onmouseup="mUp(this)" onmouseover="mOver(this)" onmouseout="mOut(this)" 
-                                  onclick="clear_output_history()" class="btn-operate clear-history btn btn-default" name="calc_button" value="clear_history">clear
+                                    onclick="clear_output_history()" class="btn-operate clear-history btn btn-default" name="calc_button" value="clear_history">clear
                                 </button> 
                             </th>
                         </tr>
