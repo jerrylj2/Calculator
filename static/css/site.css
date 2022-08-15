@@ -1,5 +1,18 @@
-.body {
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   background: linear-gradient(135deg, #d85f5f 0%, #748088 50%, #751414 100%);
+  width: 100%;
+  margin: 0%;
+}
+
+.body-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
 }
 
 .navbar {
@@ -8,14 +21,6 @@
   font-family: 'Times New Roman', Times, serif;
   color: white;
   padding: 10px 5px 10px 5px;
-}
-
-.body-content {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  margin: 2% 0;
 }
 
 .outer-box {
@@ -141,6 +146,7 @@ th {
 }
 
 footer {
+  margin-top: auto;
   border: 2px solid #9e9b97;
 }
 
